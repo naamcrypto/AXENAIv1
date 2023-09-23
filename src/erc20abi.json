@@ -1,0 +1,262 @@
+[
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_feePercentage",
+          "type": "uint256"
+        }
+      ],
+      "name": "setFeePercentage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "toToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minimumOut",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapExactInputSinglebuy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "fromToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minimumOut",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapExactInputSinglesell",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "toToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minimumOut",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapV2ExactInputSinglebuy",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "amountOut",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "fromToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minimumOut",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapV2ExactInputSinglesell",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "amountOut",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_feePercentage",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_WETH",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    },
+    {
+      "inputs": [],
+      "name": "feePercentage",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "poolFee",
+      "outputs": [
+        {
+          "internalType": "uint24",
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "routerAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "routerv2Address",
+      "outputs": [
+        {
+          "internalType": "address",
+  "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "swapRouter",
+      "outputs": [
+        {
+          "internalType": "contract ISwapRouter",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "v2swapRouter",
+      "outputs": [
+        {
+          "internalType": "contract uniswapV2Router",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "WETH",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
